@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <center>
+<body bgcolor="lightgreen">
+<h1>Employee Table Data</h1>
+
+<table border="3px" bgcolor="yellow">
+    <tr>
+        <th>NAME</th>
+        <th>PASSWORD</th>
+        <th>FIRST NAME</th>
+        <th>LAST NAME</th>
+        <th>EMAIL ADDRESS</th>
+        <th>Active</th>
+        <th>STAFF STATUS</th>
+        <th>Superuser status</th>
+        <th>Superuser status</th>
+        <th>Groups</th>
+        <th>User permissions</th>
+    </tr>
+    {% for i in data %}
+    <tr>
+        <td>{{i.username}}</td>
+        <td>{{i.password}}</td>
+        <td>{{i.first_name}}</td>
+        <td>{{i.last_name}}</td>
+        <td>{{i.email_address}}</td>
+        <td>{{i.active}}</td>
+        <td>{{i.staff_status}}</td>
+        <td>{{i.superuser_status}}</td>
+        <td>{{i.groups}}</td>
+        <td>{{i.user_permissions}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+    </center>
+</html>
